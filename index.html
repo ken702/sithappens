@@ -19,8 +19,12 @@
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        header img {
+            width: 100px;
+            height: auto;
+        }
         header h1 {
-            margin: 0;
+            margin: 10px 0 0;
             font-size: 2.5em;
         }
         header p {
@@ -73,20 +77,40 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: -1;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
         }
         .contact-info {
             font-size: 1.1em;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="logo.png" alt="Sit Happens Logo">
     <h1>Sit Happens</h1>
     <p>Your Trusted Dog Training Service</p>
 </header>
@@ -94,8 +118,9 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#book">Book Appointment</a>
 </nav>
 
 <section id="home">
@@ -105,7 +130,7 @@
 
 <section id="about">
     <h2>About Us</h2>
-    <p>We are a team of passionate dog trainers with years of experience in the field. Our mission is to help you build a strong and positive relationship with your furry friend.</p>
+    <p>We are a team of passionate dog trainers in Las Veghas with years of experience in the field. Our mission is to help you build a strong and positive relationship with your furry friend.</p>
 </section>
 
 <section id="services">
@@ -124,8 +149,18 @@
     <p class="contact-info">
         Email: <a href="mailto:info@sithappens.com">info@sithappens.com</a><br>
         Phone: (702) 863-3428<br>
-        
+        Location: Las Vegas, NV, 89141
     </p>
+</section>
+
+<section id="book">
+    <h2>Book an Appointment</h2>
+    <form class="contact-form" action="mailto:info@sithappens.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Appointment Details" rows="5" required></textarea>
+        <button type="submit">Send Email</button>
+    </form>
 </section>
 
 <footer>
