@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sit Happens - Dog Training</title>
+    <title>Sit Happens - Professional Dog Training</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
             background-color: #4CAF50;
             color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 1em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
         }
         nav {
             background-color: #333;
@@ -26,7 +36,7 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 20px;
             text-decoration: none;
         }
         nav a:hover {
@@ -34,7 +44,30 @@
             color: black;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        section ul li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #333;
@@ -44,6 +77,10 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -51,7 +88,7 @@
 
 <header>
     <h1>Sit Happens</h1>
-    <p>Your trusted dog training service</p>
+    <p>Your Trusted Dog Training Service</p>
 </header>
 
 <nav>
@@ -74,18 +111,20 @@
 <section id="services">
     <h2>Our Services</h2>
     <ul>
-        <li>Puppy Training</li>
-        <li>Obedience Training</li>
-        <li>Behavior Modification</li>
-        <li>Private Lessons</li>
-        <li>Group Classes</li>
+        <li><strong>Puppy Training</strong> - Start your puppy off on the right paw with our comprehensive puppy training programs.</li>
+        <li><strong>Obedience Training</strong> - Teach your dog basic commands and good manners with our obedience training.</li>
+        <li><strong>Behavior Modification</strong> - Address behavioral issues with our expert behavior modification techniques.</li>
+        <li><strong>Private Lessons</strong> - Get personalized training sessions tailored to your dog's specific needs.</li>
+        <li><strong>Group Classes</strong> - Socialize your dog and learn in a group setting with our fun and engaging group classes.</li>
     </ul>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@sithappens.com</p>
-    <p>Phone: (702) 863-3428</p>
+    <p class="contact-info">
+        Email: <a href="mailto:info@sithappens.com">info@sithappens.com</a><br>
+        Phone: (702) 863-3428<br>
+    </p>
 </section>
 
 <footer>
