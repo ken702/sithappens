@@ -83,17 +83,6 @@ section {
     margin-bottom: 1em;
 }
 
-.testimonial {
-    margin-bottom: 1em;
-    font-style: italic;
-}
-
-.testimonial cite {
-    display: block;
-    margin-top: 0.5em;
-    font-weight: bold;
-}
-
 .contact form {
     display: flex;
     flex-direction: column;
