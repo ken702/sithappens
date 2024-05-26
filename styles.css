@@ -52,7 +52,7 @@ header .cta {
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('./IMG_1308.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
