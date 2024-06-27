@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header .logo img {
@@ -124,7 +125,7 @@ section h2 {
 .about-section img {
     border-radius: 0%;
     width: 250;
-    height: 300px;
+    height: 250px;
     margin-bottom: 10px;
 }
 
