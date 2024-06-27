@@ -95,6 +95,13 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
+.consultation {
+    max-width: 600px;
+    background: hsl(24, 90%, 53%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 section {
     padding: 60px 20px;
     background-color: #fff;
