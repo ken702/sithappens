@@ -3,79 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sit Happens</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sit Happens - Dog Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">Sit Happens</div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#book" class="cta">Book Now</a>
+        <div class="logo">
+            <img src="./IMG_1308.jpg" alt="Sit Happens Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Welcome to Sit Happens</h1>
-            <p>Your trusted partner in dog training.</p>
-            <a href="#services" class="cta">Our Services</a>
+            <p>Your trusted dog training service.</p>
+            <button onclick="window.location.href='mailto:your-email@example.com'">Book Appointment</button>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Basic Obedience</h3>
-                <p>Teach your dog basic commands and good manners.</p>
-            </div>
-            <div class="service">
-                <h3>Advanced Training</h3>
-                <p>For dogs that have mastered the basics and need more challenges.</p>
-            </div>
-            <div class="service">
-                <h3>Puppy Training</h3>
-                <p>Start your puppy off right with our specialized training programs.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <h2>About Us</h2>
-            <p>Learn more about our team and our mission to help dogs and their owners.</p>
+            <p>At Sit Happens, we offer personalized dog training services to help your furry friend become a well-behaved member of the family. We will help you stregthen your bond with your dog and help them learn in a fun and stress-free environment.</p>
         </div>
     </section>
 
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Puppy Training</h3>
+                    <p>Start your puppy off on the right paw with our comprehensive puppy training program.</p>
+                </div>
+                <div class="service">
+                    <h3>Basic Obedience</h3>
+                    <p>Teach your dog basic commands and manners with our basic obedience classes.</p>
+                </div>
+                <div class="service">
+                    <h3>Advanced Obedience</h3>
+                    <p>Take your dog’s training to the next level with our advanced obedience courses.</p>
+                </div>
+                <div class="service">
+                    <h3>Behavioral Correction</h3>
+                    <p>Address and correct behavioral issues with our specialized training programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="contact" class="contact">
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Our Dogs Certificates</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="./images/novice.jpg" alt="Client Testimonial 1">
+                    <p>Beginner Trick Dog Certificate - Rex</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/intermediate.jpg" alt="Client Testimonial 2">
+                    <p>Intermediate Trick Dog Certificate - Rex</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/advanced.jpg" alt="Client Testimonial 2">
+                    <p>Advanced Trick Dog Certificate - Rex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <textarea name="message" placeholder="Your Message"></textarea>
+            <form action="https://formspree.io/f/mvgppyal" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
                 <button type="submit">Send</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Sit Happens. All rights reserved.</p>
-            <ul class="social">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">TickTock</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 Sit Happens. All rights reserved.</p>
     </footer>
 </body>
 </html>
