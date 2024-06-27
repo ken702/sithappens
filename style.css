@@ -121,6 +121,13 @@ section h2 {
     font-size: 1.2em;
 }
 
+.about-section img {
+    border-radius: 0%;
+    width: 250;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
 .services-section .services {
     display: flex;
     flex-wrap: wrap;
