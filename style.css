@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header .logo img {
@@ -119,6 +120,13 @@ section h2 {
 .about-section p {
     text-align: center;
     font-size: 1.2em;
+}
+
+.about-section img {
+    border-radius: 0%;
+    width: 250;
+    height: 250px;
+    margin-bottom: 10px;
 }
 
 .services-section .services {
