@@ -101,6 +101,7 @@ header nav ul li a:hover {
     background: hsl(24, 90%, 53%);
     padding: 20px;
     border-radius: 10px;
+    align-items: center;
 }
 
 section {
